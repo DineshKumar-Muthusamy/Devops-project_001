@@ -162,7 +162,7 @@ resource "aws_security_group" "Private-security-group" {
 
 # instance creation
 
-resource "aws_instance" "Public instance1" {
+resource "aws_instance" "Publicinstance1" {
   ami           = ami-06b21ccaeff8cd686
   instance_type = t2.micro
   subnet_id     = pubilc-subnet_1
@@ -173,7 +173,7 @@ resource "aws_instance" "Public instance1" {
 }
 
 
-resource "aws_instance" "Public instance2" {
+resource "aws_instance" "Publicinstance2" {
   ami           = ami-06b21ccaeff8cd686
   instance_type = t2.micro
   subnet_id     = pubilc-subnet_2
@@ -186,7 +186,7 @@ resource "aws_instance" "Public instance2" {
 
 
 #PRIVATE instance creation
-resource "aws_instance" "Private instance2" {
+resource "aws_instance" "Privateinstance2" {
   ami           = ami-06b21ccaeff8cd686
   instance_type = t2.micro
   subnet_id     = private-subnet_1
