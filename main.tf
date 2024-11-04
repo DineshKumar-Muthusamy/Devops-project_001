@@ -9,7 +9,7 @@ resource "aws_vpc" "Devops_vpc" {
  
  # create public subnet-1
 
-resource "aws_subnet" "pubilc-subnet_1" {
+resource "aws_subnet" "pubilc-subnet_01" {
   vpc_id     = aws_vpc.Devops_vpc.id
   cidr_block = "10.0.1.0/24"
  availability_zone = "us-east-1"
